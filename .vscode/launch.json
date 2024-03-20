@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SimpleServerSender<simple-server-sender>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.allune.quickfixj.spring.boot.starter.examples.sender.SimpleServerSender",
+            "projectName": "simple-server-sender",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=43167 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=simple-server-sender"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SimpleClient<simple-client>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.allune.quickfixj.spring.boot.starter.examples.client.SimpleClient",
+            "projectName": "simple-client",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=37809 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=simple-client"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SimpleClientAndServer<simple-client-and-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.allune.quickfixj.spring.boot.starter.examples.sender.SimpleClientAndServer",
+            "projectName": "simple-client-and-server",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
